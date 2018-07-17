@@ -7,20 +7,20 @@ This library is fork from https://github.com/stewartml/swift-client and did some
 
 ## Installation
 
-    $ npm install --save swift-client
+    $ npm install --save swift-client2
 
 ## Documentation
 
 The main class is `SwiftClient`, which can be imported as follows:
 
 ```js
-import SwiftClient from 'swift-client';
+import SwiftClient from 'swift-client2';
 ```
 
 Or...
 
 ```js
-const SwiftClient = require('swift-client');
+const SwiftClient = require('swift-client2');
 ```
 
 I'm just going to use ES2016 (with async and await) for brevity in this document.
