@@ -15,12 +15,16 @@ async function test() {
  /* let data = await client.create('my-container333', true, {colour: 'blue'});
   console.log("###data:", data)*/
 
-  let stream = fs.createReadStream('test.txt');
+  const filename = 'orders.csv';
+  const containername = 'my-container333';
+  let stream = fs.createReadStream(filename);
 
-  let container = client.container('my-container333');
-  const data = await container.create('test.txt',
+  let container = client.container(containername);
+  const data = await container.create(filename,
     stream, {author: 'Arthur chenyuan'});
-  console.log("####data:", data);
-}
 
+
+  console.log("####请访问网址:", `http://**host**/test/${containername}/${filename}`);
+}
 test();
+
