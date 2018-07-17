@@ -3,6 +3,8 @@
 
 This library is for connecting to an OpenStack Swift storage server.
 
+This library is fork from https://github.com/stewartml/swift-client and did some modify。
+
 ## Installation
 
     $ npm install --save swift-client
